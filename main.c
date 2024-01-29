@@ -4,13 +4,6 @@
 
 int main() {
 	
-	//opcao 1
-	int opcao;
-	float notap1, notap2, notat1, notat2, bimestre1, bimestre2, mediafinal, notapr, notatr, mediarecuperacao;
-	
-	//opcao 2 e 3
-
-	
 	do{
 		printf("\nMENU PIKA");
 		printf("\n----");
@@ -38,6 +31,9 @@ int main() {
 		switch(opcao){
 		
 			case 1:
+
+				int opcao;
+				float notap1, notap2, notat1, notat2, bimestre1, bimestre2, mediafinal, notapr, notatr, mediarecuperacao;
 				
 				printf("\nVoce escolheu (Media FATEC)!\n");
 				
