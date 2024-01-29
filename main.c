@@ -484,8 +484,8 @@ int main() {
 					}
 					
 
-					printf("maior: %i\n",maior);
-					printf("menor: %i\n",menor);
+					printf("maior valor: %i\n",maior);
+					printf("menor valor: %i\n",menor);
 					
 
 					system("pause");
@@ -493,6 +493,35 @@ int main() {
 					break;
 
 				}
+
+				case 2: {
+
+					int valores[10];
+
+					printf("Você escolheu ordem inversa dos valores lidos!\n");
+					printf("Digite 10 valores!\n");
+					for (int i = 0; i < 10; i++)
+					{
+						scanf("%i",&valores[i]);
+					}
+
+					printf("\nValores lidos: \n");
+					for (int i = 0; i < 10; i++)
+					{
+						printf("%i ",valores[i]);
+					}
+
+					printf("\nValores lidos na ordem inversa: \n");
+					for (int i = 9; i >= 0; i--)
+					{
+						printf("%i ",valores[i]);
+					}
+
+					system("pause");
+					system("cls");
+					break;
+				}
+				
 				default:
 
 					system("pause");
