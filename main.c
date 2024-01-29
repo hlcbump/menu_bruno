@@ -33,7 +33,7 @@ int main() {
 		
 		switch(opcao){
 		
-			case 1:
+			case 1:{
 
 				int opcao;
 				float notap1, notap2, notat1, notat2, bimestre1, bimestre2, mediafinal, notapr, notatr, mediarecuperacao;
@@ -85,6 +85,7 @@ int main() {
 				system("pause");
 				system("cls");
 				break;
+			}
 				
 			case 2: {
 
@@ -430,6 +431,76 @@ int main() {
 				
 				
 				
+				system("pause");
+				system("cls");
+				break;
+			}
+
+			case 13: {
+
+				int opcao=0;
+
+				printf("\nVoce escolheu manipulação de valores!\n");
+
+				printf("1 - Maior e Menor\n");
+				printf("2 - Valores lidos na ordem inversa\n");
+				printf("3 - Inserir um expoente\n");
+				printf("4 - Maior e Menor (usando ponteiro)\n");
+				printf("5 - Valores lidos na ordem inversa (usando ponteiro)\n");
+				scanf("%i",&opcao);
+
+
+				switch (opcao){
+				case 1: {
+
+					int valores[10], maior, menor;
+
+					printf("Você escolheu maior e menor!\n");
+					printf("Digite 10 valores!\n");
+
+					for (int i = 0; i < 10; i++)
+					{
+
+						scanf("%i",&valores[i]);
+
+					}
+
+					menor = valores[0];
+					maior = valores[0];
+
+					for (int i = 0; i < 10; i++)
+					{
+						if (valores[i]<menor)
+						{
+							menor = valores[i];
+						}
+
+						if (valores[i]>maior)
+						{
+							maior = valores[i];
+						}
+						
+						
+					}
+					
+
+					printf("maior: %i\n",maior);
+					printf("menor: %i\n",menor);
+					
+
+					system("pause");
+					system("cls");
+					break;
+
+				}
+				default:
+
+					system("pause");
+					system("cls");
+					break;
+				}
+
+
 				system("pause");
 				system("cls");
 				break;
