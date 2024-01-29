@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+	int opcao = 0;
 
 int main() {
 	
