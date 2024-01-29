@@ -512,7 +512,7 @@ int main() {
 					}
 
 					printf("\nValores lidos na ordem inversa: \n");
-					for (int i = 9; i >= 0; i--)
+					for (int i = 9; i >=0; i--)
 					{
 						printf("%i ",valores[i]);
 					}
